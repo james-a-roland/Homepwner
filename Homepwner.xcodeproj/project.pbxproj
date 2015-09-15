@@ -13,6 +13,7 @@
 		4CFE3F101BA8B82300157016 /* HomepwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3F0F1BA8B82300157016 /* HomepwnerTests.swift */; };
 		4CFE3F1A1BA8B93500157016 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3F191BA8B93500157016 /* ItemsViewController.swift */; };
 		4CFE3F1C1BA8B9A100157016 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3F1B1BA8B9A100157016 /* Item.swift */; };
+		4CFE3F1E1BA8BAA000157016 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3F1D1BA8BAA000157016 /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4CFE3F0F1BA8B82300157016 /* HomepwnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepwnerTests.swift; sourceTree = "<group>"; };
 		4CFE3F191BA8B93500157016 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		4CFE3F1B1BA8B9A100157016 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4CFE3F1D1BA8BAA000157016 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				4CFE3EF91BA8B82200157016 /* AppDelegate.swift */,
 				4CFE3F1B1BA8B9A100157016 /* Item.swift */,
+				4CFE3F1D1BA8BAA000157016 /* ItemStore.swift */,
 				4CFE3F191BA8B93500157016 /* ItemsViewController.swift */,
 				4CFE3F001BA8B82200157016 /* Images.xcassets */,
 				4CFE3F021BA8B82200157016 /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			files = (
 				4CFE3EFA1BA8B82200157016 /* AppDelegate.swift in Sources */,
 				4CFE3F1C1BA8B9A100157016 /* Item.swift in Sources */,
+				4CFE3F1E1BA8BAA000157016 /* ItemStore.swift in Sources */,
 				4CFE3F1A1BA8B93500157016 /* ItemsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

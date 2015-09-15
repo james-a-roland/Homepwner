@@ -10,4 +10,16 @@ import UIKit
 
 class ItemsViewController: UITableViewController {
     
+    let itemStore: ItemStore
+    
+    init(itemStore: ItemStore) {
+        self.itemStore = itemStore
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init!(coder aDecoder: NSCoder!) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
 }

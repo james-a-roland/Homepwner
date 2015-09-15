@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let ivc = ItemsViewController(style: .Plain)
+        let itemStore = ItemStore()
+        let ivc = ItemsViewController(itemStore: itemStore)
         
         window!.rootViewController = ivc
         window!.backgroundColor = UIColor.whiteColor()
