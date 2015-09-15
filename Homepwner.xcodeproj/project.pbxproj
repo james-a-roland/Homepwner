@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C84C91A1BA8DAC1004D665D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C84C9191BA8DAC1004D665D /* HeaderView.xib */; };
 		4CFE3EFA1BA8B82200157016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3EF91BA8B82200157016 /* AppDelegate.swift */; };
 		4CFE3F011BA8B82200157016 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE3F001BA8B82200157016 /* Images.xcassets */; };
 		4CFE3F041BA8B82200157016 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE3F021BA8B82200157016 /* LaunchScreen.xib */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C84C9191BA8DAC1004D665D /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		4CFE3EF41BA8B82200157016 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFE3EF81BA8B82200157016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CFE3EF91BA8B82200157016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		4C84C9171BA8D577004D665D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4C84C9191BA8DAC1004D665D /* HeaderView.xib */,
 				4CFE3F1F1BA8BE5800157016 /* ItemCell.swift */,
 				4CFE3F211BA8BE7A00157016 /* ItemCell.xib */,
 			);
@@ -228,6 +231,7 @@
 				4CFE3F041BA8B82200157016 /* LaunchScreen.xib in Resources */,
 				4CFE3F011BA8B82200157016 /* Images.xcassets in Resources */,
 				4CFE3F221BA8BE7B00157016 /* ItemCell.xib in Resources */,
+				4C84C91A1BA8DAC1004D665D /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
