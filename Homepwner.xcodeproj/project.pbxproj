@@ -40,8 +40,8 @@
 		4CFE3F191BA8B93500157016 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		4CFE3F1B1BA8B9A100157016 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4CFE3F1D1BA8BAA000157016 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
-		4CFE3F1F1BA8BE5800157016 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
-		4CFE3F211BA8BE7A00157016 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		4CFE3F1F1BA8BE5800157016 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemCell.swift; path = ../ItemCell.swift; sourceTree = "<group>"; };
+		4CFE3F211BA8BE7A00157016 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemCell.xib; path = ../ItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +62,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4CFE3EEB1BA8B82200157016 = {
+		4C84C9161BA8D573004D665D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CFE3F1B1BA8B9A100157016 /* Item.swift */,
+				4CFE3F1D1BA8BAA000157016 /* ItemStore.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4C84C9171BA8D577004D665D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				4CFE3F1F1BA8BE5800157016 /* ItemCell.swift */,
 				4CFE3F211BA8BE7A00157016 /* ItemCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4C84C9181BA8D579004D665D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CFE3F191BA8B93500157016 /* ItemsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4CFE3EEB1BA8B82200157016 = {
+			isa = PBXGroup;
+			children = (
 				4CFE3EF61BA8B82200157016 /* Homepwner */,
 				4CFE3F0C1BA8B82300157016 /* HomepwnerTests */,
 				4CFE3EF51BA8B82200157016 /* Products */,
@@ -86,9 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				4CFE3EF91BA8B82200157016 /* AppDelegate.swift */,
-				4CFE3F1B1BA8B9A100157016 /* Item.swift */,
-				4CFE3F1D1BA8BAA000157016 /* ItemStore.swift */,
-				4CFE3F191BA8B93500157016 /* ItemsViewController.swift */,
+				4C84C9161BA8D573004D665D /* Model */,
+				4C84C9171BA8D577004D665D /* View */,
+				4C84C9181BA8D579004D665D /* Controller */,
 				4CFE3F001BA8B82200157016 /* Images.xcassets */,
 				4CFE3F021BA8B82200157016 /* LaunchScreen.xib */,
 				4CFE3EF71BA8B82200157016 /* Supporting Files */,
