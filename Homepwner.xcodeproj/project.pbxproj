@@ -14,6 +14,8 @@
 		4CFE3F1A1BA8B93500157016 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3F191BA8B93500157016 /* ItemsViewController.swift */; };
 		4CFE3F1C1BA8B9A100157016 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3F1B1BA8B9A100157016 /* Item.swift */; };
 		4CFE3F1E1BA8BAA000157016 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3F1D1BA8BAA000157016 /* ItemStore.swift */; };
+		4CFE3F201BA8BE5800157016 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3F1F1BA8BE5800157016 /* ItemCell.swift */; };
+		4CFE3F221BA8BE7B00157016 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE3F211BA8BE7A00157016 /* ItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		4CFE3F191BA8B93500157016 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		4CFE3F1B1BA8B9A100157016 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4CFE3F1D1BA8BAA000157016 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		4CFE3F1F1BA8BE5800157016 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		4CFE3F211BA8BE7A00157016 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 		4CFE3EEB1BA8B82200157016 = {
 			isa = PBXGroup;
 			children = (
+				4CFE3F1F1BA8BE5800157016 /* ItemCell.swift */,
+				4CFE3F211BA8BE7A00157016 /* ItemCell.xib */,
 				4CFE3EF61BA8B82200157016 /* Homepwner */,
 				4CFE3F0C1BA8B82300157016 /* HomepwnerTests */,
 				4CFE3EF51BA8B82200157016 /* Products */,
@@ -197,6 +203,7 @@
 			files = (
 				4CFE3F041BA8B82200157016 /* LaunchScreen.xib in Resources */,
 				4CFE3F011BA8B82200157016 /* Images.xcassets in Resources */,
+				4CFE3F221BA8BE7B00157016 /* ItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +225,7 @@
 				4CFE3F1C1BA8B9A100157016 /* Item.swift in Sources */,
 				4CFE3F1E1BA8BAA000157016 /* ItemStore.swift in Sources */,
 				4CFE3F1A1BA8B93500157016 /* ItemsViewController.swift in Sources */,
+				4CFE3F201BA8BE5800157016 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
