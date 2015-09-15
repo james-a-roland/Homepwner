@@ -8,7 +8,10 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
+    @IBAction func backgroundTapped(sender: AnyObject) {
+        view.endEditing(true)
+    }
 
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var serialField: UITextField!
@@ -43,6 +46,9 @@ class DetailViewController: UIViewController {
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
+        
+        view.endEditing(true)
+        
         item.name = nameField.text
         item.serialNumber = serialField.text
         item.valueInDollars = valueField.text.toInt() ?? 0
@@ -59,6 +65,10 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
     /*
     // MARK: - Navigation

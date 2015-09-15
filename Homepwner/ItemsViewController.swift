@@ -11,29 +11,23 @@ import UIKit
 class ItemsViewController: UITableViewController, UITableViewDataSource {
     
     let itemStore: ItemStore
-    @IBOutlet var headerView: UIView!
     
     init(itemStore: ItemStore) {
         self.itemStore = itemStore
         super.init(nibName: nil, bundle: nil)
+        
+        let addItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addNewItem:")
+        navigationItem.rightBarButtonItem = addItem
+        navigationItem.leftBarButtonItem = editButtonItem()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let nib = UINib(nibName: "ItemCell", bundle: nil)
-        tableView.registerNib(nib, forCellReuseIdentifier: "ItemCell")
         tableView.rowHeight = 44
         
-        //Get height of the status bar
-        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
-        let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
-        tableView.contentInset = insets
-        tableView.scrollIndicatorInsets = insets
-        
-        //Load header bar
-        NSBundle.mainBundle().loadNibNamed("HeaderView", owner: self, options: nil)
-        tableView.tableHeaderView = headerView
+        let nib = UINib(nibName: "ItemCell", bundle: nil)
+        tableView.registerNib(nib, forCellReuseIdentifier: "ItemCell")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -45,22 +39,11 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @IBAction func addNewItem(sender: AnyObject) {
+    func addNewItem(sender: AnyObject) {
         let newItem = itemStore.createItem()
         if let index = find(itemStore.allItems, newItem) {
             let indexPath = NSIndexPath(forRow: index, inSection: 0)
             tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Top)
-        }
-    }
-    
-    @IBAction func toggleEditingMode(sender: AnyObject) {
-        if editing {
-            sender.setTitle("Edit", forState: .Normal)
-            setEditing(false, animated: true)
-        }
-        else {
-            sender.setTitle("Done", forState: .Normal)
-            setEditing(true, animated: true)
         }
     }
     

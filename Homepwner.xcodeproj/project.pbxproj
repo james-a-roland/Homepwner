@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C84C91A1BA8DAC1004D665D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C84C9191BA8DAC1004D665D /* HeaderView.xib */; };
 		4C84C91F1BA8DF6E004D665D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C84C91D1BA8DF6E004D665D /* DetailViewController.swift */; };
 		4C84C9201BA8DF6E004D665D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C84C91E1BA8DF6E004D665D /* DetailViewController.xib */; };
 		4CFE3EFA1BA8B82200157016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3EF91BA8B82200157016 /* AppDelegate.swift */; };
@@ -32,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C84C9191BA8DAC1004D665D /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		4C84C91D1BA8DF6E004D665D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4C84C91E1BA8DF6E004D665D /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		4CFE3EF41BA8B82200157016 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +78,6 @@
 		4C84C9171BA8D577004D665D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4C84C9191BA8DAC1004D665D /* HeaderView.xib */,
 				4CFE3F1F1BA8BE5800157016 /* ItemCell.swift */,
 				4CFE3F211BA8BE7A00157016 /* ItemCell.xib */,
 				4C84C91E1BA8DF6E004D665D /* DetailViewController.xib */,
@@ -238,7 +235,6 @@
 				4CFE3F011BA8B82200157016 /* Images.xcassets in Resources */,
 				4C84C9201BA8DF6E004D665D /* DetailViewController.xib in Resources */,
 				4CFE3F221BA8BE7B00157016 /* ItemCell.xib in Resources */,
-				4C84C91A1BA8DAC1004D665D /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
