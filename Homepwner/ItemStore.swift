@@ -16,6 +16,22 @@ class ItemStore: NSObject {
         allItems.append(newItem)
         return newItem
     }
+    
+    func removeItem(item: Item) {
+        if let index = find(allItems, item) {
+            allItems.removeAtIndex(index)
+        }
+    }
+    
+    func moveItemAtIndex(fromIndex: Int, toIndex: Int) {
+        if fromIndex == toIndex {
+            return
+        }
+        
+        let movedItem = allItems[fromIndex]
+        allItems.removeAtIndex(fromIndex)
+        allItems.insert(movedItem, atIndex: toIndex)
+    }
 }
 
 

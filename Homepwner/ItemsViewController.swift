@@ -57,7 +57,6 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
             sender.setTitle("Done", forState: .Normal)
             setEditing(true, animated: true)
         }
-        
     }
     
     //MARK:
@@ -76,6 +75,18 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
         cell.valueLabel.text = "$\(item.valueInDollars)"
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            let item = itemStore.allItems[indexPath.row]
+            itemStore.removeItem(item)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+    }
+    
+    override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        itemStore.moveItemAtIndex(sourceIndexPath.row, toIndex: destinationIndexPath.row)
     }
     
     
