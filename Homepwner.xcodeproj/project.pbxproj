@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C84C91A1BA8DAC1004D665D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C84C9191BA8DAC1004D665D /* HeaderView.xib */; };
+		4C84C91F1BA8DF6E004D665D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C84C91D1BA8DF6E004D665D /* DetailViewController.swift */; };
+		4C84C9201BA8DF6E004D665D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C84C91E1BA8DF6E004D665D /* DetailViewController.xib */; };
 		4CFE3EFA1BA8B82200157016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3EF91BA8B82200157016 /* AppDelegate.swift */; };
 		4CFE3F011BA8B82200157016 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE3F001BA8B82200157016 /* Images.xcassets */; };
 		4CFE3F041BA8B82200157016 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE3F021BA8B82200157016 /* LaunchScreen.xib */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		4C84C9191BA8DAC1004D665D /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		4C84C91D1BA8DF6E004D665D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4C84C91E1BA8DF6E004D665D /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		4CFE3EF41BA8B82200157016 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFE3EF81BA8B82200157016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CFE3EF91BA8B82200157016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 				4C84C9191BA8DAC1004D665D /* HeaderView.xib */,
 				4CFE3F1F1BA8BE5800157016 /* ItemCell.swift */,
 				4CFE3F211BA8BE7A00157016 /* ItemCell.xib */,
+				4C84C91E1BA8DF6E004D665D /* DetailViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -86,6 +91,7 @@
 		4C84C9181BA8D579004D665D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4C84C91D1BA8DF6E004D665D /* DetailViewController.swift */,
 				4CFE3F191BA8B93500157016 /* ItemsViewController.swift */,
 			);
 			name = Controller;
@@ -230,6 +236,7 @@
 			files = (
 				4CFE3F041BA8B82200157016 /* LaunchScreen.xib in Resources */,
 				4CFE3F011BA8B82200157016 /* Images.xcassets in Resources */,
+				4C84C9201BA8DF6E004D665D /* DetailViewController.xib in Resources */,
 				4CFE3F221BA8BE7B00157016 /* ItemCell.xib in Resources */,
 				4C84C91A1BA8DAC1004D665D /* HeaderView.xib in Resources */,
 			);
@@ -252,6 +259,7 @@
 				4CFE3EFA1BA8B82200157016 /* AppDelegate.swift in Sources */,
 				4CFE3F1C1BA8B9A100157016 /* Item.swift in Sources */,
 				4CFE3F1E1BA8BAA000157016 /* ItemStore.swift in Sources */,
+				4C84C91F1BA8DF6E004D665D /* DetailViewController.swift in Sources */,
 				4CFE3F1A1BA8B93500157016 /* ItemsViewController.swift in Sources */,
 				4CFE3F201BA8BE5800157016 /* ItemCell.swift in Sources */,
 			);

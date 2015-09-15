@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let itemStore = ItemStore()
         let ivc = ItemsViewController(itemStore: itemStore)
+        let navController = UINavigationController(rootViewController: ivc)
         
-        window!.rootViewController = ivc
+        window!.rootViewController = navController
         window!.backgroundColor = UIColor.whiteColor()
         window!.makeKeyAndVisible()
         return true

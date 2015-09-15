@@ -36,6 +36,11 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
         tableView.tableHeaderView = headerView
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     required init!(coder aDecoder: NSCoder!) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -87,6 +92,12 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
     
     override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
         itemStore.moveItemAtIndex(sourceIndexPath.row, toIndex: destinationIndexPath.row)
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let item = itemStore.allItems[indexPath.row]
+        let dvc = DetailViewController(item: item)
+        showViewController(dvc, sender: self)
     }
     
     
