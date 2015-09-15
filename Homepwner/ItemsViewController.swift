@@ -24,11 +24,15 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        tableView.registerClass(UITableViewCell.self,
-//            forCellReuseIdentifier: "UITableViewCell")
         let nib = UINib(nibName: "ItemCell", bundle: nil)
         tableView.registerNib(nib, forCellReuseIdentifier: "ItemCell")
         tableView.rowHeight = 44
+        
+        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.height
+        let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
+        tableView.contentInset = insets
+        tableView.scrollIndicatorInsets = insets
+        
     }
     
     required init!(coder aDecoder: NSCoder!) {
@@ -42,8 +46,6 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = UITableViewCell(style: .Default, reuseIdentifier: "UITableViewCell")
-//        let cell = tableView.dequeueReusableCellWithIdentifier("UITableViewCell", forIndexPath: indexPath) as! UITableViewCell
         let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath) as! ItemCell
         //ReuseIdentifier described in detail on page 144
         
