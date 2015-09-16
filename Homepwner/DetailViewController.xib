@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Homepwner" customModuleProvider="target">
             <connections>
                 <outlet property="dateLabel" destination="bzn-L2-mtZ" id="15a-RY-Tmn"/>
+                <outlet property="imageView" destination="MaV-fF-WvS" id="88Q-EH-aJf"/>
                 <outlet property="nameField" destination="y9M-RC-jWa" id="OQY-nh-y7U"/>
                 <outlet property="serialField" destination="IRP-Jf-Ian" id="K1M-gw-lhD"/>
                 <outlet property="toolbar" destination="yLI-cD-YID" id="aQd-iw-SLm"/>
