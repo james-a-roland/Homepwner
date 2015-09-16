@@ -116,11 +116,16 @@
                 <constraint firstItem="MaV-fF-WvS" firstAttribute="width" secondItem="yLI-cD-YID" secondAttribute="width" multiplier="0.5" id="YVh-ik-63o"/>
                 <constraint firstItem="Xgi-Qj-PhN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="77" id="bpZ-Sn-F5s"/>
                 <constraint firstItem="1Ia-KW-KRu" firstAttribute="leading" secondItem="Bvf-aj-YP1" secondAttribute="leading" id="d6B-jO-Ygg"/>
+                <constraint firstItem="y9M-RC-jWa" firstAttribute="top" secondItem="MaV-fF-WvS" secondAttribute="top" constant="-167" id="dbt-Q7-OgX"/>
                 <constraint firstItem="bzn-L2-mtZ" firstAttribute="top" secondItem="NVc-mM-ZcV" secondAttribute="bottom" constant="34" id="djw-gf-8Wd"/>
                 <constraint firstAttribute="bottom" secondItem="yLI-cD-YID" secondAttribute="bottom" id="ek6-zz-hmT"/>
                 <constraint firstItem="IRP-Jf-Ian" firstAttribute="trailing" secondItem="y9M-RC-jWa" secondAttribute="trailing" id="go6-Hv-GnI"/>
+                <constraint firstItem="y9M-RC-jWa" firstAttribute="top" secondItem="MaV-fF-WvS" secondAttribute="top" constant="-167" id="jcb-mx-QDw">
+                    <variation key="heightClass=compact" constant="0.0"/>
+                </constraint>
                 <constraint firstItem="NVc-mM-ZcV" firstAttribute="leading" secondItem="1Ia-KW-KRu" secondAttribute="trailing" constant="22" id="k9A-Ze-KIc"/>
                 <constraint firstItem="NVc-mM-ZcV" firstAttribute="trailing" secondItem="IRP-Jf-Ian" secondAttribute="trailing" id="lfl-r4-X3m"/>
+                <constraint firstItem="y9M-RC-jWa" firstAttribute="top" secondItem="MaV-fF-WvS" secondAttribute="top" constant="-167" id="mCd-to-Waj"/>
                 <constraint firstItem="bzn-L2-mtZ" firstAttribute="leading" secondItem="1Ia-KW-KRu" secondAttribute="leading" id="n8e-6w-z0h"/>
                 <constraint firstItem="MaV-fF-WvS" firstAttribute="top" secondItem="bzn-L2-mtZ" secondAttribute="bottom" constant="8" symbolic="YES" id="x3B-CA-5UO"/>
                 <constraint firstItem="IRP-Jf-Ian" firstAttribute="baseline" secondItem="Bvf-aj-YP1" secondAttribute="baseline" constant="-1" id="yTV-t7-7mg"/>
@@ -129,6 +134,9 @@
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <variation key="default">
                 <mask key="constraints">
+                    <exclude reference="dbt-Q7-OgX"/>
+                    <exclude reference="jcb-mx-QDw"/>
+                    <exclude reference="mCd-to-Waj"/>
                     <exclude reference="OHY-HN-HMg"/>
                     <exclude reference="YVh-ik-63o"/>
                 </mask>
@@ -136,9 +144,13 @@
             <variation key="heightClass=compact">
                 <mask key="constraints">
                     <exclude reference="QN7-5d-ly8"/>
+                    <exclude reference="dbt-Q7-OgX"/>
+                    <include reference="jcb-mx-QDw"/>
+                    <exclude reference="mCd-to-Waj"/>
                     <exclude reference="KKz-yV-zaJ"/>
                     <include reference="OHY-HN-HMg"/>
                     <include reference="YVh-ik-63o"/>
+                    <exclude reference="x3B-CA-5UO"/>
                 </mask>
             </variation>
             <connections>
