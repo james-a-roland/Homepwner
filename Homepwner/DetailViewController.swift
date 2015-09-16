@@ -20,6 +20,7 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     @IBOutlet weak var valueField: UITextField!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var toolbar: UIToolbar!
 
     
     let item: Item
@@ -68,7 +69,34 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let iv = UIImageView()
+        iv.contentMode = .ScaleAspectFit
+        iv.setTranslatesAutoresizingMaskIntoConstraints(false)
+        view.addSubview(iv)
+        imageView = iv
+        
+        imageView.setContentHuggingPriority(200, forAxis: .Vertical)
+        
+        //Create the constraints
+        let nameMap = ["imageView":imageView,
+            "dateLabel":dateLabel,
+            "toolbar":toolbar]
+        // imageView is 0 pts from superview at left and right edges
+        
+        var format = "H:|-0-[imageView]-0-|"
+        let horizontalConstraints =
+        NSLayoutConstraint.constraintsWithVisualFormat(format,
+            options: nil,
+            metrics: nil,
+            views: nameMap)
+        
+        // imageView is 8 pts from dateLabel at its top edge...
+        // ... and 8 pts from toolbar at its bottom edge
+        format = "V:[dateLabel]-[imageView]-[toolbar]"
+        let verticalConstraints =
+        NSLayoutConstraint.constraintsWithVisualFormat(format, options: nil, metrics: nil, views: nameMap)
+        NSLayoutConstraint.activateConstraints(horizontalConstraints)
+        NSLayoutConstraint.activateConstraints(verticalConstraints)
     }
 
     override func didReceiveMemoryWarning() {

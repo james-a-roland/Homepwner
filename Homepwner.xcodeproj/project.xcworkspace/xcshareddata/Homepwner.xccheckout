@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>EC937227-D450-4485-BCC0-5C9C6C8D8CDB</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Homepwner</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>44A19DE0D3064AE5C2CF81A77B88C08E0C1D7067</key>
 		<string>https://github.com/jroland81093/Homepwner.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Homepwner.xcodeproj</string>
+	<string>Homepwner.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>44A19DE0D3064AE5C2CF81A77B88C08E0C1D7067</key>
