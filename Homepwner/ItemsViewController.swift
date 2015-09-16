@@ -11,9 +11,11 @@ import UIKit
 class ItemsViewController: UITableViewController, UITableViewDataSource {
     
     let itemStore: ItemStore
+    let imageStore: ImageStore
     
-    init(itemStore: ItemStore) {
+    init(itemStore: ItemStore, imageStore: ImageStore) {
         self.itemStore = itemStore
+        self.imageStore = imageStore
         super.init(nibName: nil, bundle: nil)
         
         let addItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addNewItem:")
@@ -47,7 +49,7 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
         }
     }
     
-    //MARK:
+    //MARK: UITableViewDataSource
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemStore.allItems.count
@@ -69,6 +71,7 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
         if editingStyle == .Delete {
             let item = itemStore.allItems[indexPath.row]
             itemStore.removeItem(item)
+            imageStore.deleteImageForKey(item.itemKey)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
     }
@@ -79,7 +82,7 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let item = itemStore.allItems[indexPath.row]
-        let dvc = DetailViewController(item: item)
+        let dvc = DetailViewController(item: item, imageStore: imageStore)
         showViewController(dvc, sender: self)
     }
     

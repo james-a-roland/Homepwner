@@ -19,7 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         let itemStore = ItemStore()
-        let ivc = ItemsViewController(itemStore: itemStore)
+        let imageStore = ImageStore()
+        let ivc = ItemsViewController(itemStore: itemStore, imageStore: imageStore)
         let navController = UINavigationController(rootViewController: ivc)
         
         window!.rootViewController = navController

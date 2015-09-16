@@ -21,9 +21,11 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
 
     
     let item: Item
+    let imageStore: ImageStore
     
-    init(item: Item) {
+    init(item: Item, imageStore: ImageStore) {
         self.item = item
+        self.imageStore = imageStore
         super.init(nibName: "DetailViewController", bundle: nil)
     }
 
@@ -44,6 +46,11 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
         dateFormatter.dateStyle = .MediumStyle
         dateFormatter.timeStyle = .NoStyle
         dateLabel.text = dateFormatter.stringFromDate(date)
+        
+        let key = item.itemKey
+        if let imageToDisplay = imageStore.imageForKey(key) {
+            imageView.image = imageToDisplay
+        }
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -89,6 +96,7 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         imageView.image = image
+        imageStore.setImage(image, forKey: item.itemKey)
         dismissViewControllerAnimated(true, completion: nil)
     }
 
