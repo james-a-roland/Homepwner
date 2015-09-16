@@ -19,8 +19,19 @@ class ItemStore: NSObject {
         return documentDirectory.URLByAppendingPathComponent("items.archive")
     }()
     
+    override init() {
+        super.init()
+        let nc = NSNotificationCenter.defaultCenter()
+        
+        if let archivedItems = NSKeyedUnarchiver.unarchiveObjectWithFile(itemArchiveURL.path!) as? [Item] {
+            allItems += archivedItems
+        }
+        
+        nc.addObserver(self, selector: "appDidEnterBackground:", name: UIApplicationDidEnterBackgroundNotification, object: nil)
+    }
+    
     func createItem() -> Item {
-        let newItem = Item(random: true)
+        let newItem = Item(random: false)
         allItems.append(newItem)
         return newItem
     }
@@ -42,7 +53,18 @@ class ItemStore: NSObject {
     }
     
     func saveChanges() -> Bool {
+        println("Saving items to: \(itemArchiveURL.path!)")
         return NSKeyedArchiver.archiveRootObject(allItems, toFile: itemArchiveURL.path!)
+    }
+    
+    func appDidEnterBackground(note: NSNotification) {
+        let success = saveChanges()
+        if success {
+            println("=====\nSaved items")
+        }
+        else {
+            println("=====\nCould not save the items")
+        }
     }
 }
 
