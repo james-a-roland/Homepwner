@@ -67,7 +67,11 @@
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-cD-YID">
                     <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                     <items>
-                        <barButtonItem systemItem="camera" id="sqY-xj-xAm"/>
+                        <barButtonItem systemItem="camera" id="sqY-xj-xAm">
+                            <connections>
+                                <action selector="takePicture:" destination="-1" id="Wl9-CA-IsY"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
             </subviews>
