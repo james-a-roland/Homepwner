@@ -90,12 +90,18 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MaV-fF-WvS">
+                    <rect key="frame" x="20" y="240" width="335" height="363"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="yLI-cD-YID" firstAttribute="top" secondItem="MaV-fF-WvS" secondAttribute="bottom" constant="20" id="4fG-Av-dnW"/>
                 <constraint firstItem="bzn-L2-mtZ" firstAttribute="trailing" secondItem="NVc-mM-ZcV" secondAttribute="trailing" id="7bf-Vj-BcA"/>
                 <constraint firstItem="y9M-RC-jWa" firstAttribute="leading" secondItem="Xgi-Qj-PhN" secondAttribute="trailing" constant="18" id="BMt-x8-EB9"/>
                 <constraint firstItem="Xgi-Qj-PhN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="EUq-IC-7yV"/>
+                <constraint firstAttribute="trailing" secondItem="MaV-fF-WvS" secondAttribute="trailing" constant="20" symbolic="YES" id="EzL-He-u8s"/>
+                <constraint firstItem="MaV-fF-WvS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="KKz-yV-zaJ"/>
                 <constraint firstItem="Xgi-Qj-PhN" firstAttribute="leading" secondItem="Bvf-aj-YP1" secondAttribute="leading" id="KNz-n2-YhR"/>
                 <constraint firstItem="IRP-Jf-Ian" firstAttribute="leading" secondItem="Bvf-aj-YP1" secondAttribute="trailing" constant="21" id="L9A-wS-qvg"/>
                 <constraint firstAttribute="trailing" secondItem="y9M-RC-jWa" secondAttribute="trailing" constant="13" id="QN7-5d-ly8"/>
@@ -112,6 +118,7 @@
                 <constraint firstItem="NVc-mM-ZcV" firstAttribute="leading" secondItem="1Ia-KW-KRu" secondAttribute="trailing" constant="22" id="k9A-Ze-KIc"/>
                 <constraint firstItem="NVc-mM-ZcV" firstAttribute="trailing" secondItem="IRP-Jf-Ian" secondAttribute="trailing" id="lfl-r4-X3m"/>
                 <constraint firstItem="bzn-L2-mtZ" firstAttribute="leading" secondItem="1Ia-KW-KRu" secondAttribute="leading" id="n8e-6w-z0h"/>
+                <constraint firstItem="MaV-fF-WvS" firstAttribute="top" secondItem="bzn-L2-mtZ" secondAttribute="bottom" constant="8" symbolic="YES" id="x3B-CA-5UO"/>
                 <constraint firstItem="IRP-Jf-Ian" firstAttribute="baseline" secondItem="Bvf-aj-YP1" secondAttribute="baseline" constant="-1" id="yTV-t7-7mg"/>
                 <constraint firstItem="NVc-mM-ZcV" firstAttribute="baseline" secondItem="1Ia-KW-KRu" secondAttribute="baseline" constant="-1" id="ycl-n7-lyn"/>
             </constraints>
