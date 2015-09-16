@@ -9,9 +9,11 @@
 import UIKit
 
 class DetailViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
+
     @IBAction func backgroundTapped(sender: AnyObject) {
         view.endEditing(true)
     }
+    
 
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var serialField: UITextField!
