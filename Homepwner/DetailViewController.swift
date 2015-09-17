@@ -112,12 +112,16 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
         let imagePicker = UIImagePickerController()
         
         if UIImagePickerController.isSourceTypeAvailable(.Camera) {
-            
+            imagePicker.sourceType = .Camera
         }
         else {
             imagePicker.sourceType = .PhotoLibrary
         }
         imagePicker.delegate = self
+        imagePicker.modalPresentationStyle = UIModalPresentationStyle.Popover
+        imagePicker.popoverPresentationController?.barButtonItem =
+        sender as! UIBarButtonItem
+    
         presentViewController(imagePicker, animated: true, completion: nil)
     }
     
