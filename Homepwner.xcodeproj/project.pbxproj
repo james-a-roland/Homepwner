@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C84C91F1BA8DF6E004D665D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C84C91D1BA8DF6E004D665D /* DetailViewController.swift */; };
-		4C84C9201BA8DF6E004D665D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C84C91E1BA8DF6E004D665D /* DetailViewController.xib */; };
+		4CE33DC31BAB2C290078E7D6 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE33DC51BAB2C290078E7D6 /* DetailViewController.xib */; };
 		4CEF728B1BA9B84000CCE8C9 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF728A1BA9B84000CCE8C9 /* ImageStore.swift */; };
 		4CFE3EFA1BA8B82200157016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3EF91BA8B82200157016 /* AppDelegate.swift */; };
 		4CFE3F011BA8B82200157016 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE3F001BA8B82200157016 /* Images.xcassets */; };
@@ -33,7 +33,9 @@
 
 /* Begin PBXFileReference section */
 		4C84C91D1BA8DF6E004D665D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		4C84C91E1BA8DF6E004D665D /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		4CE33DC41BAB2C290078E7D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		4CE33DC71BAB2C320078E7D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DetailViewController.strings; sourceTree = "<group>"; };
+		4CE33DC81BAB2DBA0078E7D6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/DetailViewController.strings; sourceTree = "<group>"; };
 		4CEF728A1BA9B84000CCE8C9 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		4CFE3EF41BA8B82200157016 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFE3EF81BA8B82200157016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 			children = (
 				4CFE3F1F1BA8BE5800157016 /* ItemCell.swift */,
 				4CFE3F211BA8BE7A00157016 /* ItemCell.xib */,
-				4C84C91E1BA8DF6E004D665D /* DetailViewController.xib */,
+				4CE33DC51BAB2C290078E7D6 /* DetailViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -236,7 +238,7 @@
 			files = (
 				4CFE3F041BA8B82200157016 /* LaunchScreen.xib in Resources */,
 				4CFE3F011BA8B82200157016 /* Images.xcassets in Resources */,
-				4C84C9201BA8DF6E004D665D /* DetailViewController.xib in Resources */,
+				4CE33DC31BAB2C290078E7D6 /* DetailViewController.xib in Resources */,
 				4CFE3F221BA8BE7B00157016 /* ItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +286,16 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4CE33DC51BAB2C290078E7D6 /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CE33DC41BAB2C290078E7D6 /* Base */,
+				4CE33DC71BAB2C320078E7D6 /* en */,
+				4CE33DC81BAB2DBA0078E7D6 /* es */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
 		4CFE3F021BA8B82200157016 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

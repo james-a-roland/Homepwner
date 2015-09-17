@@ -74,7 +74,10 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
         let item = itemStore.allItems[indexPath.row]
         cell.nameLabel.text = item.name
         cell.serialNumberLabel.text = item.serialNumber
-        cell.valueLabel.text = "$\(item.valueInDollars)"
+        
+        let currencyFormatter = NSNumberFormatter()
+        currencyFormatter.numberStyle = .CurrencyStyle
+        cell.valueLabel.text = currencyFormatter.stringFromNumber(item.valueInDollars)
         
         return cell
     }
