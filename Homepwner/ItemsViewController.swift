@@ -70,9 +70,26 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             let item = itemStore.allItems[indexPath.row]
-            itemStore.removeItem(item)
-            imageStore.deleteImageForKey(item.itemKey)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            
+            let title = "Delete \(item.name)?"
+            let message = "Are you sure you want to delete this item?"
+            let ac = UIAlertController(title: title, message: message, preferredStyle: .ActionSheet)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+            let deleteAction = UIAlertAction(title: "Delete", style: .Destructive, handler: { (action) -> Void in
+                self.itemStore.removeItem(item)
+                self.imageStore.deleteImageForKey(item.itemKey)
+                self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            })
+            ac.addAction(cancelAction)
+            ac.addAction(deleteAction)
+            
+            ac.modalPresentationStyle = .Popover
+            if let cell = tableView.cellForRowAtIndexPath(indexPath) {
+                ac.popoverPresentationController?.sourceView = cell
+                ac.popoverPresentationController?.sourceRect = cell.bounds
+            }
+            presentViewController(ac, animated: true, completion: nil)
         }
     }
     
