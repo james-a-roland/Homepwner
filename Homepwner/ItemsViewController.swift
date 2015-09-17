@@ -19,6 +19,7 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
         super.init(nibName: nil, bundle: nil)
         
         let addItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addNewItem:")
+        navigationItem.title = NSLocalizedString("Homepwner", comment: "Name of app")
         navigationItem.rightBarButtonItem = addItem
         navigationItem.leftBarButtonItem = editButtonItem()
     }

@@ -22,33 +22,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgi-Qj-PhN">
-                    <rect key="frame" x="8" y="77" width="46" height="21"/>
+                    <rect key="frame" x="8" y="77" width="46" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serial" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvf-aj-YP1">
-                    <rect key="frame" x="8" y="113" width="43" height="21"/>
+                    <rect key="frame" x="8" y="112" width="43" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ia-KW-KRu">
-                    <rect key="frame" x="8" y="151" width="42" height="21"/>
+                    <rect key="frame" x="8" y="149" width="41.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y9M-RC-jWa">
-                    <rect key="frame" x="72" y="73" width="515" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="wjL-sh-D4f"/>
-                    </connections>
-                </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRP-Jf-Ian">
-                    <rect key="frame" x="72" y="109" width="515" height="30"/>
+                    <rect key="frame" x="72" y="107" width="515" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                     <variation key="heightClass=compact" misplaced="YES">
@@ -69,7 +61,7 @@
                     </items>
                 </toolbar>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzn-L2-mtZ">
-                    <rect key="frame" x="8" y="211" width="579" height="21"/>
+                    <rect key="frame" x="8" y="208" width="579" height="21"/>
                     <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="Wzi-xj-NYt"/>
@@ -82,7 +74,7 @@
                     </variation>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NVc-mM-ZcV">
-                    <rect key="frame" x="72" y="147" width="515" height="30"/>
+                    <rect key="frame" x="72" y="144" width="515" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                     <variation key="heightClass=compact" misplaced="YES">
@@ -90,16 +82,26 @@
                     </variation>
                 </textField>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MaV-fF-WvS">
-                    <rect key="frame" x="20" y="240" width="560" height="296"/>
+                    <rect key="frame" x="20" y="237" width="560" height="299"/>
                 </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y9M-RC-jWa">
+                    <rect key="frame" x="72" y="73" width="514.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="wjL-sh-D4f"/>
+                    </connections>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="y9M-RC-jWa" firstAttribute="leading" secondItem="IRP-Jf-Ian" secondAttribute="leading" id="2e1-56-zvm"/>
                 <constraint firstItem="yLI-cD-YID" firstAttribute="top" secondItem="MaV-fF-WvS" secondAttribute="bottom" constant="20" id="4fG-Av-dnW"/>
                 <constraint firstItem="bzn-L2-mtZ" firstAttribute="trailing" secondItem="NVc-mM-ZcV" secondAttribute="trailing" id="7bf-Vj-BcA"/>
                 <constraint firstItem="y9M-RC-jWa" firstAttribute="leading" secondItem="Xgi-Qj-PhN" secondAttribute="trailing" constant="18" id="BMt-x8-EB9"/>
                 <constraint firstItem="Xgi-Qj-PhN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="EUq-IC-7yV"/>
                 <constraint firstAttribute="trailing" secondItem="MaV-fF-WvS" secondAttribute="trailing" constant="20" symbolic="YES" id="EzL-He-u8s"/>
+                <constraint firstItem="y9M-RC-jWa" firstAttribute="leading" secondItem="NVc-mM-ZcV" secondAttribute="leading" id="IaV-Me-Pnt"/>
                 <constraint firstItem="MaV-fF-WvS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="KKz-yV-zaJ"/>
                 <constraint firstItem="Xgi-Qj-PhN" firstAttribute="leading" secondItem="Bvf-aj-YP1" secondAttribute="leading" id="KNz-n2-YhR"/>
                 <constraint firstItem="IRP-Jf-Ian" firstAttribute="leading" secondItem="Bvf-aj-YP1" secondAttribute="trailing" constant="21" id="L9A-wS-qvg"/>
