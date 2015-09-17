@@ -10,6 +10,7 @@
 		4C84C91F1BA8DF6E004D665D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C84C91D1BA8DF6E004D665D /* DetailViewController.swift */; };
 		4CE33DC31BAB2C290078E7D6 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE33DC51BAB2C290078E7D6 /* DetailViewController.xib */; };
 		4CEF728B1BA9B84000CCE8C9 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF728A1BA9B84000CCE8C9 /* ImageStore.swift */; };
+		4CF1568C1BAB33BD00B3DAA6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CF1568E1BAB33BD00B3DAA6 /* Localizable.strings */; };
 		4CFE3EFA1BA8B82200157016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE3EF91BA8B82200157016 /* AppDelegate.swift */; };
 		4CFE3F011BA8B82200157016 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE3F001BA8B82200157016 /* Images.xcassets */; };
 		4CFE3F041BA8B82200157016 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE3F021BA8B82200157016 /* LaunchScreen.xib */; };
@@ -37,6 +38,9 @@
 		4CE33DC71BAB2C320078E7D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DetailViewController.strings; sourceTree = "<group>"; };
 		4CE33DC81BAB2DBA0078E7D6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/DetailViewController.strings; sourceTree = "<group>"; };
 		4CEF728A1BA9B84000CCE8C9 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		4CF1568D1BAB33BD00B3DAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CF1568F1BAB33C600B3DAA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CF156901BAB33C700B3DAA6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CFE3EF41BA8B82200157016 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFE3EF81BA8B82200157016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CFE3EF91BA8B82200157016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 		4CFE3EF71BA8B82200157016 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4CF1568E1BAB33BD00B3DAA6 /* Localizable.strings */,
 				4CFE3EF81BA8B82200157016 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -219,6 +224,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 4CFE3EEB1BA8B82200157016;
 			productRefGroup = 4CFE3EF51BA8B82200157016 /* Products */;
@@ -236,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF1568C1BAB33BD00B3DAA6 /* Localizable.strings in Resources */,
 				4CFE3F041BA8B82200157016 /* LaunchScreen.xib in Resources */,
 				4CFE3F011BA8B82200157016 /* Images.xcassets in Resources */,
 				4CE33DC31BAB2C290078E7D6 /* DetailViewController.xib in Resources */,
@@ -294,6 +301,16 @@
 				4CE33DC81BAB2DBA0078E7D6 /* es */,
 			);
 			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+		4CF1568E1BAB33BD00B3DAA6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CF1568D1BAB33BD00B3DAA6 /* Base */,
+				4CF1568F1BAB33C600B3DAA6 /* en */,
+				4CF156901BAB33C700B3DAA6 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		4CFE3F021BA8B82200157016 /* LaunchScreen.xib */ = {
