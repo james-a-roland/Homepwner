@@ -21,6 +21,25 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var toolbar: UIToolbar!
+    
+    var cancelClosure: ( () -> Void)?
+    var saveClosure: ( () -> Void)?
+    var isNew: Bool = false {
+        didSet {
+            if isNew {
+                let cancelItem = UIBarButtonItem(barButtonSystemItem: .Cancel, target: self, action: "cancel:")
+                navigationItem.leftBarButtonItem = cancelItem
+                let doneItem = UIBarButtonItem(barButtonSystemItem: .Done,
+                    target: self,
+                    action: "save:")
+                navigationItem.rightBarButtonItem = doneItem
+            }
+            else {
+                navigationItem.leftBarButtonItem = navigationItem.backBarButtonItem
+                navigationItem.rightBarButtonItem = nil
+            }
+        }
+    }
 
     
     let item: Item
@@ -61,9 +80,7 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
         
         view.endEditing(true)
         
-        item.name = nameField.text
-        item.serialNumber = serialField.text
-        item.valueInDollars = valueField.text.toInt() ?? 0
+        updateItem()
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,6 +91,21 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    func save(sender: AnyObject) {
+        updateItem()
+        saveClosure?()
+    }
+    
+    func cancel(sender: AnyObject) {
+        cancelClosure?()
+    }
+    
+    func updateItem() {
+        item.name = nameField.text
+        item.serialNumber = serialField.text
+        item.valueInDollars = valueField.text.toInt() ?? 0
     }
     
     @IBAction func takePicture(sender: AnyObject) {

@@ -42,11 +42,23 @@ class ItemsViewController: UITableViewController, UITableViewDataSource {
     }
     
     func addNewItem(sender: AnyObject) {
-        let newItem = itemStore.createItem()
-        if let index = find(itemStore.allItems, newItem) {
-            let indexPath = NSIndexPath(forRow: index, inSection: 0)
-            tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Top)
+        let newItem = Item(random: false)
+        let dvc = DetailViewController(item: newItem, imageStore: imageStore)
+        dvc.isNew = true
+        
+        dvc.cancelClosure = {
+            self.dismissViewControllerAnimated(true, completion: nil)
         }
+        dvc.saveClosure = {
+            self.itemStore.addItem(newItem)
+            if let index = find(self.itemStore.allItems, newItem) {
+                let indexPath = NSIndexPath(forRow: index, inSection: 0)
+                self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Top)
+            }
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        let nc = UINavigationController(rootViewController: dvc)
+        presentViewController(nc, animated: true, completion: nil)
     }
     
     //MARK: UITableViewDataSource
