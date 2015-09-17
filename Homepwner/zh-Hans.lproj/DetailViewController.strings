@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Value"; ObjectID = "1Ia-KW-KRu"; */
+"1Ia-KW-KRu.text" = "值";
+
+/* Class = "UILabel"; text = "Serial"; ObjectID = "Bvf-aj-YP1"; */
+"Bvf-aj-YP1.text" = "串行";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Xgi-Qj-PhN"; */
+"Xgi-Qj-PhN.text" = "名字";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bzn-L2-mtZ"; */
+"bzn-L2-mtZ.text" = "排子";
